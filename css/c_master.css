@@ -1,0 +1,148 @@
+/*黑色子导航条*/
+*{
+	font-family: sans-serif;
+}
+#c_subnav{
+	width: 100%;
+	height: 70px;
+	background: #1c1a1b;
+}
+/*黑色子导航条内容*/
+dl.c_subnav_con{
+	width: 1150px;
+	margin: 0 auto;
+	line-height: 70px;
+}
+dl.c_subnav_con>dt{
+	color: #89674c;
+	font-size: 19px;
+	float: left;
+}
+dl.c_subnav_con>dd>a{
+	float: right;
+	color: #89674c;
+	font-size: 15px;
+	margin-left: 10px;
+}
+/*=====================================================*/
+/*旋转木马上的字*/
+#c_xuan_zi,#c_eight{
+	width: 100%;
+}
+.xuan_zi_con{
+	width: 593px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 50px;
+}
+/*黄色大标题*/
+.xuan_zi_con>h2,.c_eight_con>p,.c_eight_ul>li h1{
+	font-size: 42px;
+	font-weight: 400;
+	color: #a8906f;
+}
+.xuan_zi_con>p,.c_eight_ul>li>p{
+	margin-top: 25px;
+	font-size: 18px;
+	color: #fff;
+}
+/*================================================*/
+/*旋转木马盒子*/
+body {
+	font-size: 1em;
+	color: #FFFFFF;
+	background-color: #000000;
+}
+#Ellipse {
+	position: relative;
+	visibility: visible;
+	z-index: 1;
+	width: 700px;
+	height: 80px;
+	border: none;
+	margin-top: 210px;
+	margin-bottom: 100px;
+}
+.RotatingIcon {
+	border: none;
+	width: 80px;
+}
+/*========================================*/
+/*八位制茶大师*/
+.c_eight_con{
+	width: 1082px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 220px;
+}
+.c_eight_ul{
+	margin-top: 40px;
+}
+.c_eight_ul>li{
+	width: 247px;
+	height: 476px;
+	float: left;
+	margin-right: 20px;
+	margin-top: 50px;
+	/*background: pink;*/
+	position: relative;
+}
+.c_eight_ul>li.c_eightLi_no{
+	margin-right:0;
+}
+.c_eight_ul>li img{
+	width: 247px;
+	height: 346px;
+}
+.c_eight_ul>li h1{
+	font-size: 24px;
+	margin-top: 23px;
+}
+/*隐藏的字*/
+.c_eight_ul>li>p{
+	position: absolute;
+	bottom: 15px;
+	right: 50px;
+	font-size: 15px;
+	margin-top: 15px;
+}
+/*===================================*/
+/*跳动的字*/
+#c_dong_zi{
+	width: 100%;
+}
+.container{
+	margin:0 auto;
+	width:1100px;
+	margin-top: 200px;
+	position:relative;
+}
+.container p{
+	text-align:center;
+	padding:10px auto;
+}
+/*下面两个是核心样式*/
+.beat-char {
+    line-height: 3.4em;
+    position: relative;
+	display: inline-block;
+	background: transparent;
+
+}
+.rotate{
+	transform:rotate(360deg) ;
+	-ms-transform:rotate(360deg); 	/* IE 9 */
+	-moz-transform:rotate(360deg); 	/* Firefox */
+	-webkit-transform:rotate(360deg); /* Safari 和 Chrome */
+	-o-transform:rotate(360deg);
+	-webkit-transition-duration: 0.7s;
+}
+#beatText{
+	font-size: 50px;
+	color: #fff;
+	text-shadow: 5px 13px 10px pink;
+}
+#roloadText{
+	font-size: 20px;
+	color: pink;
+}
