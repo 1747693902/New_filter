@@ -1,0 +1,146 @@
+.footer{
+	width: 100%;
+	height: 500px;
+	/*background: #232121;*/
+	background: #000;
+	margin-top: 150px;
+}
+.footer  .footer_content{
+	width: 1300px;
+	height: 500px;
+	margin: 0 auto;
+	position: relative;
+}
+.footer  .footer_content>dl{
+	float: left;
+	margin-top: 80px;
+}
+.footer  .footer_content>dl>dt{
+	font-size: 25px;
+	color: #fff;
+	margin-bottom: 20px;
+	text-shadow:1px 2px  15px #fff;
+}
+.footer  .footer_content>dl>dd{
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 10px;
+	cursor: default;
+}
+.footer  .footer_content>dl>dd>ul>li{
+	margin-top: 10px;
+	cursor: default;
+}
+.producing{
+	position: relative;
+	top:29px;
+}
+.footer  .footer_content>dl>dd.color_gray{
+	color:#606b7b;
+}
+/*添加图片区域*/
+.footer  .footer_content .footer_img{
+	position: absolute;
+	top:-100px;
+	left: 200px;
+}
+.footer  .footer_content .footer_img>img{
+	width: 800px;
+	height: 300px;
+	box-shadow: 1px 2px 15px #fff;
+	border-radius: 5px;
+}
+/*二维码区域*/
+.footer .footer_content  .footer_scan{
+	position: absolute;
+	right: 1px;	
+	top:80px;
+	width: 260px;
+	height: 300px;
+	background: #2c2c2c;
+	box-shadow: 1px 2px 15px #fff ;
+}
+.footer .footer_content  .footer_scan .scan_top{
+	width: 260px;
+	height: 100px;
+}
+.footer .footer_content  .footer_scan .scan_top>dl{
+	float: left;
+	color: #fff;
+	margin-top: 20px;
+	margin-left: 30px;
+}
+
+.footer .footer_content  .footer_scan .scan_top>dl>dt{
+	font-size: 20px;
+	margin-bottom: 10px;
+}	
+.footer .footer_content  .footer_scan .scan_top>dl>dd{
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+.footer .footer_content  .footer_scan .scan_bot{
+	width: 260px;
+	height: 130px;
+	margin-top: 50px;
+}
+.footer .footer_content  .footer_scan .scan_bot>span{
+	font-size: 18px;
+	color: #fff;
+	vertical-align: top;
+	margin-left: 10px;
+	text-shadow: 1px 9px 6px #000;
+}
+.footer .footer_content  .footer_scan .scan_bot>img{
+	position: relative;
+	top: 30px;
+	left: 10px;
+	width: 80px;
+	height: 80px;
+	box-shadow: 0 3px 30px #000 ;
+	transition: 1s;
+}
+.footer .footer_content  .footer_scan .scan_bot:hover .img{
+	transform: scale(2,2);
+}
+.footer .footer_content  .footer_scan .scan_bot>p{
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	background: #000000;
+	font-size: 15px;
+	font-style: '微软雅黑';
+	color: #fff;
+	margin-left: 30px;
+	position: relative;
+	top:-30px;
+	cursor: default;
+	box-shadow:1px 2px 15px #000;
+}
+/*版权区域*/
+.footer .footer_content .copy{
+	width: 600px;
+	height: 100px;
+	background: rgba(12,5,1,0.8);
+	position: absolute;
+	bottom: 100px;
+	left: 300px;
+	cursor: default;
+}
+.footer .footer_content .copy>p:first-child{
+	font-size: 28px;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 5px;
+	text-shadow:1px 2px 15px #fff ;
+}
+.footer .footer_content .copy>p:last-child{
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	margin-top: 10px;
+	text-shadow:1px 2px 15px #fff ;
+}
