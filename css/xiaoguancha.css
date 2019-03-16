@@ -1,0 +1,192 @@
+/*子导航条及固定导航条部分*/
+.subnav {
+	width: 100%;
+	height: 66px;
+	background: #1c1a1b;
+	font-family: "微软雅黑";
+	z-index: 10;
+	margin-top: -3px;
+	
+}
+.subnav dl {
+	height: 66px;
+	line-height: 66px;
+}
+.subnav dt,.subnav dd {
+	float: left;
+	/*background: red;*/
+	height: 66px;
+}
+.subnav dt {
+	margin-left: 71px;
+	margin-right: 932px;
+	color: #a8906f;
+	font-size: 18px;
+	/*position: fixed;*/
+}
+.subnav dd {
+	margin-right: 10px;
+}
+.subnav dd a{
+	color: #a8906f;
+	font-size: 16px;
+}
+/*主题内容部分开始*/
+.main {
+	width: 100%;
+	height: 682px;
+	text-align: center;
+	background: url(../imgs/banner-1.jpg) no-repeat;
+	overflow: hidden;
+	background-size: 100% 100%;
+	position: relative;
+}
+.huachu {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	color: #fff;
+	widows: 300px;
+	height: 300px;
+}
+.huachu .slideInLeft {
+	animation: slideInLeft 2s;
+	font-family: "微软雅黑";
+	font-size: 40px;
+	margin-bottom: 25px;
+	/*text-shadow: 1px 2px 10px #fff;*/
+	letter-spacing: 5px;
+	color: #a8906f;
+}
+.huachu .slideInUp {
+	animation: slideInUp 2s;
+}
+.huachu .slideInUp li {
+	font-size: 20px;
+	font-family: "微软雅黑";
+	margin-top: 10px;
+	letter-spacing: 3px;
+}
+.main h2 {
+	color: #a8906f;
+	font-size: 50px;
+	margin-top: 93px;
+	margin-bottom: 20px;
+}
+.main p {
+	color: #fff;
+	font-size: 25px;
+}
+/*轮播开始*/
+.lunbo {
+	width: 100%;
+	height: 682px;
+	position: relative;
+	overflow: hidden;
+}
+.lunbo ul {
+	
+	width: 3861px;
+	height: 100%;
+	transition: 0.5s;
+	
+}
+.lunbo ul li {
+	float: left;
+	width: 1287px;
+	height: 100%;
+}
+.lunbo li img {
+	background-size: 100% 100%;
+}
+/*四杯茶冒气效果*/
+.maoqi {
+	width: 100%;
+	height: 682px;
+	background: url(../imgs/sibeicha.png) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+.maoqi ul {
+	overflow: hidden;
+	/*background: red;*/
+	width: 90%;
+	/*padding-top: 100px;*/
+	margin: 0 auto;
+	/*padding-left: 70px;*/
+}
+.maoqi ul li {
+	float: left;
+	text-align: center;
+	width: 25%;
+}
+.maoqi h3 {
+	width: 100%;
+	text-align: center;
+	font-size: 50px;
+	font-family: "微软雅黑";
+	/*background: red;*/
+	color: #a8906f;
+	margin-top: 50px;
+	font-weight: 300;
+}
+/*茶叶部分开始*/
+.chaye {
+	width: 100%;
+	height: 682px;
+	background: url(../imgs/chaye.png) no-repeat;
+	background-size: 100% 100%;
+	color: #fff;
+	overflow: hidden;
+}
+.chaye .slideInLeft {
+	/*animation: slideInLeft 2s;*/
+	font-size: 50px;
+	margin-top: 0150px;
+	margin-left: 70px;
+	display: none;
+	
+}
+.chaye .slideInRight  {
+	/*animation: slideInRight 2s;*/
+	font-family: "微软雅黑";
+	font-size: 20px;
+	margin-left: 80px;
+	display: none;
+}
+.chaye .slideInUp {
+	/*animation: slideInUp 2s;*/
+	display: inline-block;
+	width: 140px;
+	height: 40px;
+	margin-left: 80px;
+	margin-top: 100px;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 6px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 16px;
+	font-weight: bold;
+	display: none;
+}
+.jianjie {
+	width: 100%;
+	height: 531px;
+	background: url(../imgs/jianjie.png) no-repeat;
+	text-align: center;
+	color: #fff;
+	overflow: hidden;
+	background-size: 100% 100%;
+}
+.jianjie h2 {
+	color: #a8906f;
+	margin-top: 141px;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+.jianjie p {
+	font-size: 18px;
+	font-family: "微软雅黑";
+	line-height: 30px;
+}
