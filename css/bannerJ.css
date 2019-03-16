@@ -1,0 +1,235 @@
+/*banner开始*/
+.banner{
+	width: 100%;
+	height: 960px;
+	position: relative;
+}
+/*轮播图开始*/
+.bannerPic{
+	width: 100%;
+	height: 960px;
+	overflow: hidden;
+	position: relative;
+}
+.bannerPic>li{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.bannerPic>li>div{
+	position: absolute;
+	bottom: 70px;
+	left: 50%;
+    margin-left: -95px;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-align: center;
+}
+.bannerPic .seled{
+	display: block;
+}
+.bannerPic img{
+	width: 100%;
+	height: 100%;
+}
+/*轮播图结束*/
+/*指示器开始*/
+.indicator{
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	width: 90px;
+	margin-left: -45px;
+	height: 17px;
+	text-align: center;
+}
+.indicator>li{
+	float: left;
+	margin-left: 10px;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.indicator .zhiShi{
+	background: #FFFFFF;
+}
+/*指示器结束*/
+/*左右按钮开始*/
+.left{
+	position: absolute;
+	top: 50%;
+	left: 50px;
+	width: 50px;
+	margin-top: -50px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 900;
+	color: #808080;
+	cursor: pointer;
+}
+.left:hover{
+	color: #FFFFFF;
+}
+.right{
+	position: absolute;
+	top: 50%;
+	right: 50px;
+	width: 50px;
+	margin-top: -50px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 900;
+	color: #808080;
+	cursor: pointer;
+}
+.right:hover{
+	color: #FFFFFF;
+}
+/*左右按钮结束*/
+/*banner结束*/
+/***********************************************************/
+/*<!--扛鼎之作开始-->*/
+.make{
+	width: 100%;
+	height: 280px;
+	background: #000000;
+	padding:40px 0;
+	
+}
+.makeConter{
+	width: 1500px;
+	height: 280px;
+	margin: 0 auto;
+}
+.makeConter>ul{
+	width: 1500px;
+	height: 280px;
+}
+.makeConter>ul>li{
+	position: relative;
+	float: left;
+	width: 453px;
+	height: 277px;
+	margin-right: 20px;
+	margin-left: 25px;
+	transition: 1s;
+	border-radius: 7px;
+	border: 1px solid #000000;
+	box-shadow: 1px 1px 5px #FFFFFF;
+	
+}
+.makeConter>ul>li:hover{
+	transform: translateY(-20px);
+	box-shadow: 0 0 20px #FFFFFF;
+}
+.makeConter img{
+	width: 100%;
+	height: 100%;
+	
+}
+.makeConter>ul>li>div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 55px;
+	padding-top: 25px;
+	text-align: center;
+	color: #c0792d;
+	font-size: 25px;
+}
+.makeConter>ul>li>div>p:nth-child(2){
+	color: #916f53;
+	font-size: 20px;
+	margin-top: 5px;
+}
+/*<!--扛鼎之作结束-->*/
+/*******************************************************/
+/*茶的起源开始*/
+.origin{
+	width: 100%;
+	height: 900px;
+	background: #000000;
+}
+.originC{
+	width: 100%;
+	height: 900px;
+	background: #000000;
+	position: relative;
+}
+.originC>div.qi{
+	width: 220px;
+	height: 90px;
+	position: absolute;
+	left: -220px;
+	top: 50px;
+	z-index: 200px;
+}
+.originC>div.qi>p{
+	display: inline-block;
+	float: left;
+	font-size: 50px;
+	color: #FFFFFF;
+	font-family: "微软雅黑";
+}
+.originC>div.qi>b{
+	width:150px;
+	float: left;
+	display: inline-block;
+	font-size: 30px;
+	color: #FFFFFF;
+	font-family: "微软雅黑";
+	margin-top: 25px;
+	margin-left: 15px;
+}
+.ying{
+	width: 500px;
+	height: 600px;
+	color: #FFFFFF;
+	margin-top: 60px;
+	font-family: "微软雅黑";
+	position: absolute;
+	right: -500px;
+}
+.ying>ul{
+	width: 500px;
+	height: 600px;
+}
+.ying>ul>li{
+	width: 500px;
+	height: 150px;
+	margin-top: 20px;
+}
+.ying>ul>li i{
+	font-size: 35px;
+}
+.ying>ul>li p{
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 15px;
+}
+.ying>ul>li p:nth-child(3){
+	font-size: 20px;
+	margin-left: 55px;
+	margin-top: 10px;
+}
+.originC>.pic{
+	width: 600px;
+	height: 600px;
+	margin-top: 100px;
+	position: absolute;
+	left: -600px;
+	top: 50px;
+}
+.originC>.pic>img{
+	width: 100%;
+	height: 100%;
+}
+/*茶的起源结束*/
