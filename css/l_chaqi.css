@@ -1,6 +1,6 @@
 header{
 	width: 100%;
-	height: 2200px;
+	/*height: 2800px;*/
 	background: #000;
 	/*opacity: 0.7;*/
 }
@@ -14,13 +14,21 @@ header{
 	font-size: 18px;
 	font-family: "微软雅黑";
 	color: chocolate;
-	margin-top: 12px;
+	padding-left: 10px;
+	margin-top: 10px;
+}
+#lei{
+	color: #fff;
+	background: url(../imgs/tubiao.png) no-repeat 0 5px;
+	background-size: 10px 10px;
 }
 
 .jianJie{
 	width: 100%;
-	height: 680px;
+	height: 700px;
 	overflow: hidden;
+	background:url(../imgs/bei02.jpg);
+	background-size: 100% 750px;
 	/*background: yellow;*/
 }
 .jianJie_top{
@@ -36,7 +44,8 @@ header{
 	font-family: "微软雅黑";
 	line-height: 25px;
 	width: 400px;
-	margin: 20px 0 0 450px;
+	margin: 20px 0 0 500px;
+	color: #fff;
 }
 .jianJie ul{
 	width: 960px;
@@ -84,7 +93,9 @@ header{
 
 .ziShaHu{
 	width: 100%;
-	height: 680px;
+	height: 700px;
+	background:url(../imgs/bei01.jpg);
+	background-size: 100% 750px;
 	/*background: blue;*/
 	position: relative;
 	z-index: 10;
@@ -119,7 +130,7 @@ header{
 	height: 60px;
 	/*background: red;*/
 	
-	background:url(../img/accent-intro-top.png)256px 149px;
+	background:url(../imgs/accent-intro-top.png)256px 149px;
     background-size: 300px 200px;
 }
 .box_l_r{
@@ -129,7 +140,7 @@ header{
 	width: 80px;
 	height: 60px;
 	/*background: red;*/
-	background:url(../img/accent-intro-top.png)122px 149px;
+	background:url(../imgs/accent-intro-top.png)122px 149px;
     background-size: 300px 200px;
 }
 
@@ -183,12 +194,15 @@ header{
 
 .gaiWan{
 	width: 100%;
-	height: 680px;
-	background: pink;
+	height: 700px;
+	overflow: hidden;
+	background: url("../imgs/bei.jpg");
+	background-size: 100% 780px;
+	/*background: pink;*/
 }
 .hua{
 	width: 100%;
-	height: 680px;
+	height: 700px;
 }
 .hua li{
 	float: left;
@@ -259,6 +273,53 @@ header{
 
 .wrap{
 	width: 100%;
-	height: 680px;
-	background: orange;
+	height: 700px;
+	overflow: hidden;
+	background:url(../imgs/bei02.jpg);
+	background-size: 100% 750px;
+	/*background: orange;*/
 }
+.wrap>ul{
+	width: 700px;
+	height: 400px;
+	margin:50px 20px 0 300px;
+}
+.wrap>ul li{
+	float: left;
+	width: 150px;
+	height: 200px;
+	margin-right: 10px;
+	margin-top: 10px;
+	overflow: hidden;
+	filter:brightness(40%)
+}
+.wrap>ul li img{
+	transition: 1s;
+}
+.wrap>ul li img:hover{
+	transform: scale(1.2);
+}
+.wrap>ul li:hover{
+	filter:brightness(100%)
+}
+.gun{
+	width: 400px;
+	height: 40px;
+	overflow: hidden;
+	margin-top: 60px;
+	margin-left: 400px;
+	/*border: 1px solid red;*/
+}
+.gun_l{
+	width: 400px;
+	
+	margin-left: 20px;
+}
+.gun_l li{
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #fff;
+}
+
+
