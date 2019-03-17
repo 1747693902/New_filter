@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/animate.css" />
+		<link rel="stylesheet" href="../css/chawenhua.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../css/glassstyle.css" />
+		<link rel="icon"  href="../favicon.ico"/>
+		<!--<link rel="stylesheet" type="text/css" href="../css/demo.css">-->
+	</head>
+
+	<body>
+		<iframe src="../html/nav.html" width="99.5%" height="68px" scrolling="no" frameborder="0"></iframe>
+		<div id="banner">
+			<div id="carousel">
+				<img src="../imgs/lunbo1.jpg" data-url="#">
+				<img src="../imgs/lunbo2.jpg" data-url="#">
+				<img src="../imgs/lunbo3.jpg" data-url="#">
+				<img src="../imgs/lunbo4.jpg" data-url="#">
+			</div>
+		</div>
+		<div class="lunboBannerBox">
+			<ul>
+				<li>
+
+					<h2>品茶</h2>
+					<p>“所谓品茶”，讲究的是“品”，茶汤香醇，心情愉悦，环境优雅，这种种因素加在一起，才能谓之品茶。</p>
+
+				</li>
+				<li>
+					<h2>茶叶</h2>
+					<p>茶，灌木或小乔木，嫩枝无毛。叶革质，长圆形或椭圆形，先端钝或尖锐，基部楔形，上面发亮，下面无毛或初时有柔毛，边缘有锯齿，叶柄无毛。花白色，花柄有时稍长； 萼片阔卵形至圆形，无毛，宿存；花瓣阔卵形，基部略连合，背面无毛，有时有短柔毛；子房密生白毛；花柱无毛。蒴果3球形或1-2球形，高1.1-1.5厘米，每球有种子1-2粒。花期10月至翌年2月。
+					</p>
+
+				</li>
+				<li>
+					<h2>茶具</h2>
+					<p>我国的茶具，种类繁多，造型优美，既有实用价值，又富艺术之美。所以，驰名中外，为历代饮茶爱好者所青睐。在中国饮茶的发展史上，无论是饮茶习俗，还是茶类加工，都经历了许多变化。</p>
+
+				</li>
+				<li>
+					<h2>基础知识</h2>
+					<p>中国的六大茶类分别是：绿茶、红茶、白茶、青茶（乌龙茶）、黄茶和黑茶。</p>
+
+				</li>
+			</ul>
+		</div>
+		<iframe src="../html/demo.html" width="99.5%" height="700px" scrolling="no" frameborder="0"></iframe>
+		<div class="content">
+
+			<img src="../imgs/2.png" class="light-zoom" width="350" height="189" alt="">
+
+			<img class="light-zoom" width="609px" height="297px" src="../imgs/adobe_text_rendering.png">
+		</div>
+
+		<!--<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>-->
+
+		<iframe src="../html/footer.html" width="99.5%" height="550px" scrolling="no"></iframe>
+		<script type="text/javascript" src="../js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="../js/lightzoom.js"></script>
+		<script src="../js/slider.js" type="text/javascript"></script>
+		<script type="text/javascript" src="../js/chawenhua.js"></script>
+		<script>
+			$('#carousel').carousel({
+				curDisplay: 0, //默认索引
+				autoPlay: false, //是否自动播放
+				interval: 3000 //间隔时间
+			});
+			$('img.light-zoom').lightzoom({
+				zoomPower: 3, //Default
+				glassSize: 180, //Default
+			});
+		</script>
+
+	</body>
+
+</html>

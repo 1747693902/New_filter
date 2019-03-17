@@ -55,5 +55,66 @@ $(function(){
 		$(".one").fadeOut(1000)
 	})
 	
-	
-})
+	//字滚动
+	 function gundong() {
+     var liH = $(".gun_l li").height();
+     var gunH = 0;
+     
+     $(".gun_l").append($(".gun_l li").eq(0).clone());
+     setInterval(function() {
+         gunH += liH;
+//       console.log(gunH);
+         $(".gun_l").animate({
+             marginTop: -gunH + "px"
+         }, 500);
+         if (gunH >= ($(".gun_l li").length - 1) *30) {
+             gunH = 0;
+             $(".gun_l").animate({
+                 marginTop: gunH + "px"
+             }, 1);
+         }
+     }, 2000);
+ }
+ gundong()
+ 
+ 
+	$(".left li:eq(0)").click(function(){
+		$(document).scrollTop(0);
+		$(this).attr("id","lei").siblings().removeAttr("id","lei")
+	})
+	$(".left li:eq(1)").click(function(){
+		$(document).scrollTop(600);
+		$(this).attr("id","lei").siblings().removeAttr("id","lei")
+	})
+	$(".left li:eq(2)").click(function(){
+		$(document).scrollTop(1400);
+		$(this).attr("id","lei").siblings().removeAttr("id","lei")
+	})
+	$(".left li:eq(3)").click(function(){
+		$(document).scrollTop(2100);
+		$(this).attr("id","lei").siblings().removeAttr("id","lei")
+	})
+	window.addEventListener('scroll',fn,true);
+	function fn(){
+	 var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+   if(scrollTop<600){
+   	$(".left").show()
+   	$(".left li:eq(0)").attr("id","lei").siblings().removeAttr("id","lei")
+   }else if(scrollTop>600&&scrollTop<1200){
+   	$(".left").show()
+   	$(".left li:eq(1)").attr("id","lei").siblings().removeAttr("id","lei")
+   }
+   else if(scrollTop>1200&&scrollTop<1900){
+   	$(".left").show()
+   	$(".left li:eq(2)").attr("id","lei").siblings().removeAttr("id","lei")
+   }else if(scrollTop>1900&&scrollTop<2600){
+   	$(".left li:eq(3)").attr("id","lei").siblings().removeAttr("id","lei")
+  $(".left").show()
+   }
+   else{
+   	$(".left").hide()
+   }
+}
+//	测导航条
+
+    });
