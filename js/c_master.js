@@ -9,6 +9,7 @@ window.onload=function(){
 
 //==========================================
 $(function(){
+	//八位大师
 	$(".eight_dong").hide();
 	$(".eight_hover").mouseenter(function(){
 		$(this).siblings($(".eight_dong")).slideDown(500);
@@ -17,16 +18,19 @@ $(function(){
 		$(this).siblings($(".eight_dong")).slideUp(500);
 	})
 	
-	
-	
+//=====================================================
+	//文字跳动
 	$('#beatText').beatText({isAuth:false,isRotate:false});
 	$('#rotateText').beatText({isAuth:false,isRotate:true});
 	$('#autoText').beatText({isAuth:true,beatHeight:"3em",isRotate:false});
 	$('#roloadText').beatText({isAuth:true,beatHeight:"1em",isRotate:false,upTime:100,downTime:100});
 	$('#autoRotateText').beatText({isAuth:true,upTime:700,downTime:700,beatHeight:"3em",isRotate:true});
 	
-	
-	
+//=====================================================
+    //手风琴
+	$(".box ul li").hover(function(){
+		$(this).addClass('on').siblings().removeClass('on');
+	});
 	
 	
 	
