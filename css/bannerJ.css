@@ -159,16 +159,17 @@
 	background: #000000;
 }
 .originC{
-	width: 100%;
+	width: 1500px;
 	height: 900px;
 	background: #000000;
+	margin: 0 auto;
 	position: relative;
 }
 .originC>div.qi{
 	width: 220px;
 	height: 90px;
 	position: absolute;
-	left: -220px;
+	left: -800px;
 	top: 50px;
 	z-index: 200px;
 }
@@ -196,7 +197,7 @@
 	margin-top: 60px;
 	font-family: "微软雅黑";
 	position: absolute;
-	right: -500px;
+	right: -1500px;
 }
 .ying>ul{
 	width: 500px;
@@ -225,7 +226,7 @@
 	height: 600px;
 	margin-top: 100px;
 	position: absolute;
-	left: -600px;
+	left: -1300px;
 	top: 50px;
 }
 .originC>.pic>img{
@@ -233,3 +234,158 @@
 	height: 100%;
 }
 /*茶的起源结束*/
+/*************************************************************************/
+/*发现你的茶开始*/
+.find{
+	width: 100%;
+	height: 900px;
+	background: #000000;
+	padding-bottom: 50px;
+}
+.findConter{
+	width: 1500px;
+	height: 900px;
+	margin: 0 auto;
+}
+/*发现你的茶左开始*/
+.findLeft{
+	float: left;
+	width: 400px;
+	height: 900px;
+	background: #FFFFFF;
+	padding-left: 100px;
+	padding-right: 20px;
+	font-family: "微软雅黑";
+	border-right: 1px solid #DCDCDC;
+}
+.findLeft>div.boKe>h1{
+	font-size: 30px;
+	margin-top: 80px;
+}
+.findLeft>div.boKe>p{
+	font-size: 20px;
+	color: #707070;
+	margin-top: 10px;
+}
+.findLeft>div.liaoJie>h2{
+	font-size: 25px;
+	margin-top: 80px;
+}
+.findLeft>div.liaoJie>p{
+	font-size: 20px;
+	color: #707070;
+	margin-top: 30px;
+}
+.findLeft>div.search>p{
+	font-size: 25px;
+	margin-top: 80px;
+}
+.findLeft>div.search>input{
+	width: 250px;
+	height: 35px;
+	border: 1px solid #dcdcdc;
+	background: #f7f7f7;
+	color: #cac8ca;
+	font-size: 20px;
+	
+}
+/*发现你的茶左结束*/
+/*发现你的茶右开始*/
+.findRight{
+	float: right;
+	width: 900px;
+	height: 900px;
+	background: #FFFFFF;
+	overflow: auto;
+	border: 1px solid #DCDCDC;
+}
+.findRight>ul{
+	width: 830px;
+	height: 2000px;
+	margin: 0 auto;
+	font-family: "微软雅黑";
+}
+.findRight>ul>li{
+	width: 630px;
+	height: 520px;
+}
+.findRight>ul>li>p{
+	font-size: 20px;
+	color: #CAC8CA;
+	margin-top: 40px;
+	width: 630px;
+}
+.findRight>ul>li>p>img{
+	width: 100%;
+	height: 100%;
+}
+.findRight>ul>li>p:nth-child(1){
+	font-size: 30px;
+	margin-top: 50px;
+}
+.findRight>ul>li:nth-child(1){
+	width: 830px;
+	height: 520px;
+	padding: 0;
+}
+.findRight>ul>li:nth-child(1)>img{
+	width: 100%;
+	height: 100%;
+}
+.findRight>ul>li{
+	padding: 0 100px;
+}
+/*评论开始*/
+.pingLun{
+	width: 628px;
+	height: 800px;
+	padding: 0 100px;
+	margin: 0 auto;
+    margin-top: 50px;
+    border: 1px solid #DCDCDC;
+    margin-bottom: 50px;
+}
+.pingLun>h1{
+	margin-top: 50px;
+	font-size: 25px;
+}
+.pingLun>p{
+	font-size: 20px;
+	margin-top: 20px;
+	color: #CAC8CA;
+}
+.pingLun textarea{
+	width: 628px;
+	height: 200px;
+	background: #F7F7F7;
+	margin-top: 15px;
+	font-size: 20px;
+	color: #CAC8CA;
+	border: 1px solid #444444;
+}
+.pingLun input{
+	width: 628px;
+	height: 40px;
+	background: #F7F7F7;
+	margin-top: 15px;
+	font-size: 20px;
+	color: #CAC8CA;
+	border: 1px solid #DCDCDC;
+}
+.pingLun input[type="button"]{
+	display: block;
+	width: 630px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 25px;
+	/*color: #333333;*/
+	cursor: pointer;
+	margin-top: 20px;
+}
+.pingLun .boltn{
+	background: #000000;
+	color: #FFFFFF;
+}
+/*评论结束*/
+/*发现你的茶结束*/

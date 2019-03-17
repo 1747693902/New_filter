@@ -79,14 +79,48 @@ $(window).scroll(function() {
      //鼠标滚动的距离
      var iTop = $(window).scrollTop();
      var num=$(".banner").height()+$(".make").height();
-     console.log(iTop);
-     console.log(num);
+//   console.log(iTop);
+//   console.log(num);
      if(iTop>=num){
-     	$(".ying").animate({"right":200},1000);
-     	$(".qi").animate({"left":250},1000);
-     	$(".pic").animate({"left":250},1000);
+     	$(".ying").animate({"right":0},1000);
+     	$(".qi").animate({"left":0},1000);
+     	$(".pic").animate({"left":0},1000);
      }
-})
+     
+});
 // 茶起源js结束
-	
+
+//********************************************************************?
+
+// SEARCH与input背景变化  js开始
+   $(".search>input,.jiaoDian").focus(function(){
+   	    $(this).css({"background":"#ffffff"});
+   })
+   $(".search>input,.jiaoDian").blur(function(){
+   	    $(this).css({"background":"#f7f7f7"});
+   })
+// SEARCH与input背景变化   js开始
+   
+// *****************************************************************
+
+// 判断表单是否填写完js开始
+   $(".pingLun input").on("input propertychange", function() {
+        check("skgj", "user", "pass", "cdata", "boltn");
+    });
+
+    function check(skgj,user, pass, cdata, name) {
+        var user = $("." + user).val();
+        var skgj = $("." + skgj).val();
+        var pass = $("." + pass).val();
+        if (user != "" && pass != ""&& skgj != "") {
+            $("." + cdata).addClass(name);
+        } else {
+            $("." + cdata).removeClass(name);
+            return false;
+        }
+    }
+// 判断表单是否填写完js结束
+
+//****************************************************************************
+   
 });
