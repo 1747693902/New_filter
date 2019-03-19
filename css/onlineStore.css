@@ -1,5 +1,5 @@
 /*轮播图开始*/
-boby html{
+body html{
 	overflow-x: hidden;
 }
 .banner{
@@ -8,7 +8,7 @@ boby html{
 	background: #000000;
 }
 .bannerConter{
-	width: 100%;
+	width: 1800px;
 	height: 960px;
 	background: #000000;
 	position: relative;
@@ -18,6 +18,7 @@ boby html{
 	height: 960px;
 	position: relative;
 	margin: 0 auto;
+	/*backface-visibility: hidden;*/
 }
 .carousel img{
 	width: 500px;
@@ -25,34 +26,38 @@ boby html{
 	border-radius: 10px;
 	box-shadow: 0 0 15px #FFFFFF;
 }
-.carousel img:nth-child(1){
+.carousel a{
+	display: block;
+}
+.carousel a:nth-child(1){
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	left: 650px;
 	margin-top: -150px;
-	margin-left: -250px;
+	z-index: 2;
 }
-.carousel img:nth-child(2){
+.carousel a:nth-child(2){
 	position: absolute;
 	top: 50%;
-	right: 0;
+	right: 20px;
 	margin-top: -150px;
-	margin-right: 20px;
+	z-index: 1;
 }
-.carousel img:nth-child(3){
+.carousel a:nth-child(3){
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	left: 650px;
 	margin-top: -150px;
-	margin-left: -250px;
+	z-index: 1;
 }
-.carousel img:nth-child(4){
+.carousel a:nth-child(4){
 	position: absolute;
 	top: 50%;
-	left: 0;
+	left: 20px;
 	margin-top: -150px;
-	margin-left: 20px;
+    z-index: 1;
 }
+
 /*指示器开始*/
 .indicator{
 	position: absolute;
@@ -76,6 +81,27 @@ boby html{
 	box-shadow: 0 0 10px #FFFFFF;
 }
 /*指示器结束*/
+/*左右按钮*/
+.carouselright{
+	width: 500px;
+	height: 300px;
+	position: absolute;
+	top: 50%;
+	left: 1280px;
+	margin-top: -150px;
+	z-index: 20;
+	cursor: pointer;
+}
+.carouselLeft{
+	width: 500px;
+	height: 300px;
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	margin-top: -150px;
+	z-index: 20;
+	cursor: pointer;
+}
 /*轮播图结束*/
 /******************************************/
 /*小罐茶开始*/
@@ -304,7 +330,8 @@ boby html{
 	padding-top: 0;
 	background: #000000;
 	font-family: "微软雅黑";
-}.sloganConter{
+}
+.sloganConter{
 	width: 1250px;
 	height: 500px;
 	margin: 0 auto;
@@ -325,13 +352,32 @@ boby html{
 	float: left;
 	width: 600px;
 	height: 440px;
-	background: pink;
+	position: relative;
 }
+.shiPing_Left div{
+	position: absolute;
+	left: 0;
+	top: 50px;
+	width: 600px;
+	height: 400px;
+	background: rgba(0,0,0,0.5);
+}
+/*.shiPing_Left:hover{
+	transform: scale(1.2);
+}*/
 .shiPing_right{
 	float: right;
 	width: 600px;
 	height: 440px;
-	background: yellow;
+	position: relative;
+}
+.shiPing_right div{
+	position: absolute;
+	right: 0;
+	top: 50px;
+	width: 600px;
+	height: 400px;
+	background: rgba(0,0,0,0.5);
 }
 /*视频广告结束*/
 /*******************************************************************/

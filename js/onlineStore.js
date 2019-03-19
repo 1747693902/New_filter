@@ -1,6 +1,33 @@
 $(function(){
 //	轮播图js开始
-    
+//  点击右边图片
+    var timer = setInterval(fnn,1000)
+    $(".carouselright").click(function(){
+//  	console.log($(this))
+    	$(".carousel a").eq(0).before($(".carousel a").eq(3));
+    	$(".indicator li").eq(0).before($(".indicator li").eq(3));
+
+    })
+    $(".carouselLeft").click(function(){
+//  	console.log($(this))
+    	$(".indicator a").eq(3).after($(".carousel a").eq(0));
+    	$(".indicator li").eq(3).after($(".indicator li").eq(0));
+
+    })
+       $('.bannerConter').mouseenter(function(){
+       	clearInterval(timer);
+//     	clearTimeout(timer)
+       })
+       $('.bannerConter').mouseleave(function(){
+//     	clearInterval(timer);
+       	timer = setInterval(fnn,1000)
+       })
+     function fnn (){
+    	$(".carousel a").eq(0).before($(".carousel a").eq(3));
+    	$(".indicator li").eq(0).before($(".indicator li").eq(3));
+
+    }
+
 //  轮播图js结束
 
 //******************************************************?
@@ -47,7 +74,20 @@ $(function(){
     $(".dingWei>ul>li").eq(2).mouseleave(function(){
     	$(".dianHua").hide();
     });
+    
+    
+    
+//  点击播放视频
+//$('.shiPing_right div').click(function(){
+//	$(this).hide();
+//	if(video.paused){
+//	    #video.play();
+//	}else{
+//		video.paused();
+//	}
+//	
+//})
 
 
-
+     
 });

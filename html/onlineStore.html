@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="../css/reset.css"/>
 		<link rel="stylesheet" href="../css/onlineStore.css" />
 		<link rel="stylesheet" href="../imgs/aliJ/iconfont.css" />
+		<link rel="icon"  href="../favicon.ico"/>
 		<!--引入js文档-->
 		<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
 		<script type="text/javascript" src="../js/onlineStore.js" ></script>
@@ -18,10 +19,10 @@
 		<section class="banner">
 			<div class="bannerConter">
 				<div class="carousel">
-					<img src="../imgs/xiandaiJ.jpg"/>
-					<img src="../imgs/xiandai1J.jpg"/>
-					<img src="../imgs/xiandai2J.jpg"/>
-					<img src="../imgs/xiandaid3J.jpg"/>
+					<a href="#"><img src="../imgs/xiandaiJ.jpg"/></a>
+					<a href="#"><img src="../imgs/xiandai1J.jpg"/></a>
+					<a href="#"><img src="../imgs/xiandai2J.jpg"/></a>
+					<a href="#"><img src="../imgs/xiandaid3J.jpg"/></a>
 				</div>
 				<!--指示器开始-->
 				<ul class="indicator">
@@ -31,6 +32,8 @@
 					<li></li>
 				</ul>
 				<!--指示器结束-->
+				<div class="carouselLeft"></div>
+				<div class="carouselright"></div>
 			</div>
 		</section>
 		<!--轮播图结束-->
@@ -97,6 +100,7 @@
 			</div>
 		</section>
 		<!--热门商品结束-->
+		<!--**********************************************************************-->
 		<!--品牌精选开始-->
 		<section class="brand">
 			<div class="brandConter">
@@ -192,25 +196,29 @@
 			</div>
 		</section>
 		<!--品牌精选结束-->
+		<!--*********************************************************************************-->
 		<!--视频广告开始-->
 		<section class="slogan">
 			<div class="sloganConter">
 				<p>视频广告</p>
 				<div class="shiPing">
 					<div class="shiPing_Left">
-						<video style="width: 100%; height: 100%;" autoplay>
+						<video style="width: 100%; height: 100%;" autoplay loop muted>
 						  <source src="../imgs/5b90b62f92545.mp4" type="video/mp4">
 						</video>
+						<!--<div></div>-->
 					</div>
 					<div class="shiPing_right">
-						<video style="width: 100%; height: 100%;" autoplay loop muted>
+						<video style="width: 100%; height: 100%;"  autoplay loop muted>
 						  <source src="../imgs/tea_video.mp4" type="video/mp4">
 						</video>
+						<!--<div></div>-->
 					</div>
 				</div>
 			</div>
 		</section>
 		<!--视频广告结束-->
+		<!--****************************************************************************************-->
 		<!--右侧定位开始-->
 		<div class="dingWei">
 			<ul>
@@ -232,7 +240,7 @@
 			</div>
 		</div>
 		<!--右侧定位结束-->
-		<div style="background: red;">1252</div>
+	<!--	<div style="background: red;">1252</div>-->
 		<iframe src="../html/footer.html" width="99.9%" height="580px" frameborder="0" scrolling="no"></iframe>
 	</body>
 </html>
